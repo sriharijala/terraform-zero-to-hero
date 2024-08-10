@@ -5,5 +5,5 @@ provider "aws" {
 resource "aws_instance" "example" {
     ami           = "ami-0ae8f15ae66fe8cda"  # Specify an appropriate AMI ID
     instance_type = "t2.micro"
-    key_name = "aws_loginx"
+    key_name = "aws_login"
 }
