@@ -8,7 +8,7 @@ variable "cidr" {
 }
 
 resource "aws_key_pair" "example" {
-  key_name   = "terraform-demo-abhi"  # Replace with your desired key name
+  key_name   = "terraform-demo-sri"  # Replace with your desired key name
   public_key = file("~/.ssh/id_rsa.pub")  # Replace with the path to your public key file
 }
 
@@ -99,7 +99,7 @@ resource "aws_instance" "server" {
       "sudo apt-get install -y python3-pip",  # Example package installation
       "cd /home/ubuntu",
       "sudo pip3 install flask",
-      "sudo python3 app.py &",
+      "sudo python3 app.py &"
     ]
   }
 }
